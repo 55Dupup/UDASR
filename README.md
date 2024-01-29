@@ -25,17 +25,17 @@ Training and evaluation code will be released later.
 
 ## Results
 
-####  Quantitative comparisons on the AID dataset with upscale ×4.
+###  Quantitative comparisons on the AID dataset with upscale ×4.
 
 ![](./figs/table-AID.png)
 
-#### Quantitative comparisons on the WHU-RS19 dataset with upscale ×4.
+### Quantitative comparisons on the WHU-RS19 dataset with upscale ×4.
 
 ![](./figs/table-WHU.png)
 
-#### Some visual comparisons.
+### Some visual comparisons.
 
-##### **Quality Result-1:**
+#### **Quality Result-1:**
 
 ![](./figs/visual-compare-1.png)
 
