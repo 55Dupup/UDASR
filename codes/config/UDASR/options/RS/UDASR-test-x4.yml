@@ -1,0 +1,39 @@
+#### general settings
+name: RS_UDASR_test_x4
+use_tb_logger: false
+model: DegSRModel
+scale: 4
+gpu_ids: [0]
+metrics: []
+
+#### datasets
+datasets:
+ test:
+   name: AID_UDASR_test_x4
+   mode: SingleDataset
+   data_type: lmdb
+   dataroot: /data/55d/55d/data_samples/RS/My_AID_dataset_total.lmdb
+#### network structures
+networks:
+  netD1:
+    which_network: PatchGANDiscriminator
+    setting:
+      in_c: 3
+      nf: 64
+      nb: 3
+      stride: 1
+    pretrain: 
+      path: /data/55d/UDASR-code/checkpoints/x4/200000_netDRM.pth
+      strict_load: true
+  netSR:
+    which_network: EDSR
+    setting:
+      nf: 64
+      nb: 16
+      res_scale: 1
+      upscale: 4
+    pretrain: 
+      path: /data/55d/UDASR-code/checkpoints/x4/200000_netSR.pth
+      strict_load: true
+
+
