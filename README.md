@@ -1,9 +1,5 @@
 # UDASR: Unsupervised Degradation Aware and Representation for Real-World Remote Sensing Image Super-Resolution
 
-## Code: 
-
-Code coming soon....
-
 ## Installation
 ```
 sudo apt-get update
