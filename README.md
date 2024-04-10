@@ -1,9 +1,5 @@
 # UDASR: Unsupervised Degradation Aware and Representation for Real-World Remote Sensing Image Super-Resolution
 
-## Code: 
-
-Code coming soon....
-
 ## Installation
 ```
 sudo apt-get update
@@ -19,9 +15,14 @@ pip3 install lpips --index-url http://pypi.douban.com/simple --trusted-host pypi
 pip3 install torchsummary --index-url http://pypi.douban.com/simple --trusted-host pypi.douban.com
 ```
 
-## Training and Evaluation
+## Start up
+To get a quick start:
 
-Training and evaluation code will be released later.
+```bash
+cd codes/config/UDASR/
+python3 test.py --opt options/RS/UDASR-test-x4.yml
+#You should change the corresponding model weights and dataset paths to your corresponding paths.
+```
 
 ## Results
 
