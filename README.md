@@ -17,11 +17,16 @@ pip3 install torchsummary --index-url http://pypi.douban.com/simple --trusted-ho
 
 ## Start up
 To get a quick start:
-
+### Test
 ```bash
 cd codes/config/UDASR/
 python3 test.py --opt options/RS/UDASR-test-x4.yml
 #You should change the corresponding model weights and dataset paths to your corresponding paths.
+```
+
+### Train
+```
+python train.py --opt options/RS/UDASR-train-Deg.yml
 ```
 
 ## Results
